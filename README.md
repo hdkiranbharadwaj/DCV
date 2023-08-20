@@ -1,5 +1,4 @@
 # DCV
-Certainly, here's a more detailed version of the project proposal for the Dynamic CV Platform:
 
 ### Dynamic CV
 
