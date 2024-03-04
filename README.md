@@ -2,6 +2,63 @@
 
 ### Dynamic CV
 
+## Description
+DCV is a web application that allows users to create and manage their dynamic curriculum vitae (CV) online. It provides features for users to upload their resumes, update personal details, and showcase their professional experience and skills and share and maintain it dynamically.
+
+## Features
+- User authentication: Sign up and login functionality for users.
+- Profile management: Users can feed their personal details such as name, contact information and email.
+- Resume upload: Users can upload their resumes in pdf format.
+- File management: Ability to view, download, and change uploaded resumes.
+- Security: Passwords are hashed for security, and user authentication tokens are used for secure sessions.
+
+## Technologies Used
+- Node.js
+- Express.js
+- PostgreSQL
+- React.js (for the frontend, if applicable)
+- bcrypt (for password hashing)
+- JWT (JSON Web Tokens) for authentication
+- Multer (for file uploads)
+- Other libraries and frameworks as needed
+
+## Installation
+1. Clone the repository: `git clone https://github.com/hdkiranbharadwaj/DCV/tree/main/DCV`
+2. Install dependencies: `npm install`
+3. Set up environment variables: Create a `.env` file and add your environment variables (e.g., database credentials, secret keys).
+
+## Server SetUp
+1. Run the following commands,
+2. `cd server`
+3. `nodemon server.js`
+
+## Client SetUp
+1. Run the following commands,
+2. `cd client`
+3. `npm start`
+
+## Database SetUp
+1. Install and Configure PosgreSQL.
+2. Run the queries from server/data.sql in the postgreSQL console.
+3. Set the database password in environment variable as `PASSWORD`.
+   
+## Usage
+1. Access the application through a web browser or API testing tool like postman.
+2. Sign up for a new account or log in with existing credentials.
+3. Explore and use the various features of the application.
+
+## Configuration
+- Configure the database connection in `db.js`.
+- Update `.env` file with your environment variables for the database password as `PASSWORD`.
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit pull requests.
+
+
+
+---
+---
+# Overview (Proposal AS IS)
 **1. Executive Summary:**
 The proposed project seeks to create a comprehensive and innovative Dynamic CV Platform, allowing users to craft dynamic and personalized CVs to showcase their professional skills and experiences. By offering a range of features such as customizable templates, privacy controls, shareable links, and analytics, the platform aims to redefine the way individuals present themselves in the professional world.
 
