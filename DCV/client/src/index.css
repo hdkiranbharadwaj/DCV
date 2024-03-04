@@ -1,0 +1,391 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.button-signup {
+  appearance: none;
+  background-color: #ffffff;
+  border-width: 0;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-signup:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #5e196e;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-signup:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  color: aliceblue;
+  border-radius: 10px;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-signup:after {
+  border-radius: 10px;
+  color: aliceblue;
+  background-color: #5e196e;
+}
+
+.button-signup span {
+  z-index: 1;
+  border-radius: 10px;
+  position: relative;
+}
+.button-signup:hover {
+  border-radius: 10px;
+  color: aliceblue;
+}
+
+.login {
+  display: inline-flex;
+  justify-content: right;
+  align-items: center;
+}
+a {
+  color: #000000;
+}
+
+.background-radial-gradient {
+  background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(
+      650px circle at 0% 0%,
+      hsl(218, 41%, 35%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1250px circle at 100% 100%,
+      hsl(218, 41%, 45%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%
+    );
+
+  height: 100vh;
+}
+
+#radius-shape-1 {
+  height: 220px;
+  width: 220px;
+  top: -60px;
+  left: -130px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+#radius-shape-2 {
+  border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+  bottom: -60px;
+  right: -110px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+.bg-glass {
+  background-color: hsla(0, 0%, 94%, 0.9) !important;
+  backdrop-filter: saturate(200%) blur(25px);
+}
+
+.button-signup {
+  appearance: none;
+  background-color: #ffffff;
+  border-width: 0;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.94, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-signup:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #5e196e;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-signup:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  color: aliceblue;
+  border-radius: 10px;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-signup:after {
+  border-radius: 10px;
+  color: aliceblue;
+  background-color: #5e196e;
+}
+
+.button-signup span {
+  z-index: 1;
+  border-radius: 10px;
+  position: relative;
+}
+.button-signup:hover {
+  border-radius: 10px;
+  color: aliceblue;
+}
+
+.login {
+  display: inline-flex;
+  justify-content: right;
+  align-items: center;
+}
+a {
+  color: #000000;
+}
+
+.background-radial-gradient {
+  background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(
+      15% circle at 0% 0%,
+      hsl(218, 41%, 35%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%
+    ),
+    radial-gradient(
+      25% circle at 100% 100%,
+      hsl(218, 41%, 45%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%
+    );
+  height: auto;
+  background-size: 300% 300%; /* Adjust as needed */
+  animation: gradientAnimation 10s infinite; /* Adjust animation duration */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+#radius-shape-1 {
+  height: 220px;
+  width: 220px;
+  top: -60px;
+  left: -130px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+#radius-shape-2 {
+  border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+  bottom: -60px;
+  right: -110px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+.bg-glass {
+  background-color: hsla(0, 0%, 94%, 0.9) !important;
+  backdrop-filter: saturate(200%) blur(25px);
+}
+
+.background-gradient-card {
+  color: rgb(230, 222, 222);
+  background-image: linear-gradient(135deg, #9c7ac0 10%, #6359d0 100%);
+}
+.card-text {
+  margin-top: 50px;
+  text-align: justify;
+  font-size: 12px;
+}
+.card-body {
+  text-align: left;
+}
+.card {
+  width: 650px;
+  max-height: 30rem;
+  max-width: 23rem;
+  margin-top: 150px;
+  margin: 30px;
+}
+.uppercase-text {
+  text-transform: capitalize;
+}
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.Body-Home {
+  background-color: #000000;
+  height: fit-content;
+}
+
+.full-height {
+  height: 100vh; /* Ensure the component covers the full viewport height */
+}
+
+body,
+html {
+  height: 100%; /* Ensure body and html cover the full viewport height */
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+}
+.myPDF {
+  width: 85%;
+  height: 975px;
+}
+iframe {
+  border-radius: 15px;
+}
+.hey {
+  width: 450px;
+  max-width: 450px;
+}
+.d-flex {
+  margin-right: 0px;
+}
+.unfo {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.unfi {
+  color: rgb(161, 57, 57);
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+.unfii {
+  color: rgb(112, 218, 245);
+}

@@ -1,0 +1,24 @@
+{
+  "name": "dcv",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "if-env TYPE=server && (cd server && npm install) || (cd client && npm install)",
+    "server": "nodemon ./server/server.js",
+    "client": "cd client && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mui/icons-material": "^5.15.11",
+    "@react-pdf/renderer": "^3.3.8",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "if-env": "^1.0.4",
+    "jsonwebtoken": "^9.0.2",
+    "material-icons": "^1.13.12",
+    "react-pdf": "^7.7.1",
+    "react-router-dom": "^6.22.2"
+  }
+}
