@@ -1,6 +1,9 @@
 -- To create database
 CREATE DATABASE DCV;
 
+-- To use
+USE DCV;
+
 -- To create the users table 
 CREATE OR REPLACE FUNCTION generate_unique_userid()
 RETURNS TRIGGER AS $$
